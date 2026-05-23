@@ -28,6 +28,7 @@ export interface TaxResult {
   totalDeductions: number;
   taxableIncome: number;
   taxBeforeCess: number;
+  surcharge: number;
   cess: number;
   totalTax: number;
   effectiveRate: number;
