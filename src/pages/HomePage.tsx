@@ -21,7 +21,12 @@ export default function HomePage() {
           >
             Open Tax Calculator
           </a>
-
+          <a
+            href="/emi-calculator"
+            className="bg-white text-slate-900 hover:bg-gray-200 px-6 py-3 rounded-lg font-semibold transition"
+          >
+            Open EMI Calculator
+          </a>
           <a
             href="#contact"
             className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-slate-900 transition"

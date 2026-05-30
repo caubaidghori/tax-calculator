@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
 import CalculatorPage from './pages/CalculatorPage';
+import EMICalculatorPage from './pages/EMICalculatorPage';
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
         <Route
           path="/tax-calculator"
           element={<CalculatorPage />}
+        />
+        <Route
+          path="/emi-calculator"
+          element={<EMICalculatorPage />}
         />
       </Routes>
     </BrowserRouter>
