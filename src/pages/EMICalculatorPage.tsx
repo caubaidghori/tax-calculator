@@ -293,10 +293,8 @@ for (let year = 1; year <= tenure; year++) {
                 dataKey="value"
                 nameKey="name"
                 outerRadius={140}
-                label={({ name, value, percent }) =>
-                    `${name}
-                ₹${Math.round(value).toLocaleString('en-IN')}
-                (${(percent * 100).toFixed(1)}%)`
+                label={({ name, percent }) =>
+                `${name} (${((percent ?? 0) * 100).toFixed(1)}%)`
                 }
                 >
 
@@ -306,8 +304,8 @@ for (let year = 1; year <= tenure; year++) {
                 </Pie>
 
                 <Tooltip
-                formatter={(value: number) =>
-                `₹${Math.round(value).toLocaleString('en-IN')}`
+                formatter={(value) =>
+                    formatCurrency(Number(value ?? 0))
                 }
                 />
 
