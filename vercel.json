@@ -1,11 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/tax-calculator",
-      "destination": "/"
-    },
-    {
-      "source": "/emi-calculator",
+      "source": "/((?!robots\\.txt|sitemap\\.xml|favicon\\.svg).*)",
       "destination": "/"
     }
   ]
