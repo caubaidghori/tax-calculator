@@ -1,7 +1,11 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/tax-calculator",
+      "destination": "/"
+    },
+    {
+      "source": "/emi-calculator",
       "destination": "/"
     }
   ]
